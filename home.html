@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Angelo</title>
+</head>
+
+<body class="fondo">
+  <!--bg-dark Y style="position: fixed;" -->
+  <header class="p-3 bg-dark text-white" >
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="img/logopng.png" width="150px" style="align-items: left;">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            </a>
+
+            <div class="barra">
+              <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#Inicio" target="_self" class="nav-link px-2 text-white">Inicio</a></li>
+                <li><a href="#Productos" target="_self" class="nav-link px-2 text-white">Productos</a></li>
+                <li><a href="#Recetas y tips" target="_self" class="nav-link px-2 text-white">Recetas y Tips</a></li>
+                <li><a href="#Nosotros" target="_self" class="nav-link px-2 text-white">Nosotros</a></li>
+                <li><a href="#Ubicación" target="_self" class="nav-link px-2 text-white">Ubicación</a></li>
+                <li><a href="#Contacto" target="_self" class="nav-link px-2 text-white">Contacto</a></li>
+              </ul>
+            </div>  
+
+            <div class="barra1">
+              <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Buscar..." aria-label="Search">
+              </form>
+            </div>
+
+            <div class="barra1" id="inicio">
+              <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+              </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="fondo">
+      <div class="inicio">
+        <span>
+          ¡Bienvenidos a Angelo, tu Almacén de Pastas!
+          <br>
+          Somos una pequeña empresa familiar
+          <br>  
+          dedicada a la elaboración de pastas artesanales.
+          <br>
+          Naturales... libres de aditivos y conservantes
+        </span>
+      </div>
+  </main>
+  
+  <!--PRODUCTOS--------------------------------------------------------------------------------->
+
+<div class="productos">
+  <a name="Productos"></a>
+  <p>Probá nuestros Sabores</p>
+</div>
+
+    <div class="section-grid-2">
+
+      <span style="background-image: url(img/sorrentinos.JPG);background-size: cover;background-position: center;">
+          <div style="background-color: rgba(0, 0, 0, 0.4); height: 100%;">
+              <div class="info">
+                <a href="javascript:abrir()" class="hp">Sorrentinos</a>
+                <div class="ventana" id="vent"  style="background-color: white;">
+                  <div id="cerrar"> <a href="javascript:cerrar()"> <img src="img/error.png" class="cerr"></a></div>
+                  <p class="int-vent">
+                  Carne y Verdura<br>
+                  Jamón y Queso<br>
+                  Calabaza y Queso<br>
+                  4 Quesos<br>
+                  Ricota y Jamón<br>
+                  Ricota y Verdura<br></p>
+                </div>
+
+                <script>
+                  function abrir(){
+                    document.getElementById("vent").style.display="block";
+                  }
+                  function cerrar(){
+                      document.getElementById("vent").style.display="none";
+                    }
+                </script>
+              </div>
+          </div>
+      </span>
+
+      <span style="background-image: url(img/ravioles.JPG);background-size: cover;background-position: center;">
+          <div style="background-color: rgba(0, 0, 0, 0.4); height: 100%;">
+              <div class="info">
+                <a href="javascript:abrir1()" class="hp">Ravioles</a>
+                <div class="ventana1" id="vent1"  style="background-color: white;">
+                  <div id="cerrar"> <a href="javascript:cerrar1()"> <img src="img/error.png" class="cerr"></a></div>
+                  <p class="int-vent">
+                  Carne y Verdura<br>
+                  Pollo y Verdura<br>
+                  4 Quesos<br>
+                  Ricota y Jamón<br>
+                  Ricota y Verdura<br></p>
+                </div>
+
+                <script>
+                  function abrir1(){
+                    document.getElementById("vent1").style.display="block";
+                  }
+                  function cerrar1(){
+                      document.getElementById("vent1").style.display="none";
+                    }
+                </script>
+
+              </div>
+          </div>
+      </span>
+
+      <span style="background-image: url(img/canelones.jpeg);background-size: cover;background-position: center;">
+          <div style="background-color: rgba(0, 0, 0, 0.4); height: 100%;">
+              <div class="info">
+                  
+                <a href="javascript:abrir2()" class="hp">Canelones</a>
+                <div class="ventana2" id="vent2"  style="background-color: white;">
+                  <div id="cerrar"> <a href="javascript:cerrar2()"> <img src="img/error.png" class="cerr"></a></div>
+                  <p class="int-vent">
+                  Carne y Verdura<br>
+                  Jamón y Queso<br>
+                  Ricota y Verdura</p>
+                </div>
+
+                <script>
+                  function abrir2(){
+                    document.getElementById("vent2").style.display="block";
+                  }
+                  function cerrar2(){
+                      document.getElementById("vent2").style.display="none";
+                    }
+                </script>
+
+              </div>
+          </div>
+      </span>
+
+      <span style="background-image: url(img/salsa.JPG);background-size: cover;background-position: center;">
+          <div style="background-color: rgba(0, 0, 0, 0.4); height: 100%;">
+              <div class="info">
+                <a href="javascript:abrir3()" class="hp">Salsas</a>
+                <div class="ventana3" id="vent3"  style="background-color: white;">
+                  <div id="cerrar"> <a href="javascript:cerrar3()"> <img src="img/error.png" class="cerr"></a></div>
+                  <p class="int-vent">
+                  Fileto<br>
+                  Bolognesa (con carne picada)</p>
+                </div>
+
+                <script>
+                  function abrir3(){
+                    document.getElementById("vent3").style.display="block";
+                  }
+                  function cerrar3(){
+                      document.getElementById("vent3").style.display="none";
+                    }
+                </script>
+
+              </div>
+          </div>
+      </span>
+
+      <span style="background-image: url(img/ñoquis.JPG);background-size: cover;background-position: center;">
+        <div style="background-color: rgba(0, 0, 0, 0.4); height: 100%;">
+            <div class="info">
+                
+              <a href="javascript:abrir4()" class="hp">Ñoquis</a>
+              <div class="ventana4" id="vent4"  style="background-color: white;">
+                <div id="cerrar"> <a href="javascript:cerrar4()"> <img src="img/error.png" class="cerr"></a></div>
+                <p class="int-vent">
+                De Papa<br>
+                De Papa con Verdura<br></p>
+              </div>
+
+              <script>
+                function abrir4(){
+                  document.getElementById("vent4").style.display="block";
+                }
+                function cerrar4(){
+                    document.getElementById("vent4").style.display="none";
+                  }
+              </script>
+
+            </div>
+        </div>
+    </span>
+
+    <span style="background-image: url(img/fideosverdes.JPG);background-size: cover;background-position: center;">
+      <div style="background-color: rgba(0, 0, 0, 0.4); height: 100%;">
+          <div class="info">
+            <a href="javascript:abrir5()" class="hp">Fideos</a>
+            <div class="ventana5" id="vent5"  style="background-color: white;">
+              <div id="cerrar"> <a href="javascript:cerrar5()"> <img src="img/error.png" class="cerr"></a></div>
+              <p class="int-vent">
+              Finos:<br>
+              Al huevo / Con Verdura<br>
+              Cinta:<br>
+              Al huevo</p>
+            </div>
+
+            <script>
+              function abrir5(){
+                document.getElementById("vent5").style.display="block";
+              }
+              function cerrar5(){
+                  document.getElementById("vent5").style.display="none";
+                }
+            </script>
+
+          </div>
+      </div>
+  </span>
+</div>
+
+<!-- RECETAS Y TIPS ---------------------------------------------------------------->
+
+
+<div class="productos">
+  <a name="Productos"></a>
+  <a name="Recetas y tips"></a>
+  <p>Recetas y tips</p>
+</div>
+
+<div class="section-grid-1">
+
+  <span>
+    <div class="card" style="border: none; text-align: justify;" data-aos="zoom-out-right" >
+        <img src="img/puntojusto.png" style="object-fit: cover; height: 40%;" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align: center;"><b>El punto justo</b></h5>
+            <p class="card-text">
+              #AngeloTip para que tus pastas queden espectaculares:
+              <br>
+                1.	Hervir agua: ¾ partes de tu cacerola. Cuanto mas grande la olla, mejor.<br>
+                2.	Agregar ½ cucharadita de sal.<br>
+                3.	Añadir la pasta y remover suavemente con cuchara de madera.<br>
+                4.	Mantener a fuego medio...</p>
+
+                <script>{
+                  <span class="hide" id="hideText"></span>
+                }
+                </script>
+                  
+                  <details>
+                    <summary>Seguir leyendo...</summary><br>
+                    <p>hasta romper el hervor. Volver a mover.<br>
+                    5.	Al subir la pasta, esperar 4 min.<br>
+                      6.	Colar con espumadera para evitar que se rompan. Si se vuelcan en un colador, nunca sacudirlos. La pasta caserita necesita mucho amor!!<br>
+                      7.	Y ya está listo para servir!</p>
+                  </details>
+        </div>
+    </div>
+</span>
+
+
+<span>
+  <div class="card" style="border: none; text-align: justify;" data-aos="zoom-out-right">
+      <img src="img/pesto.png" style="object-fit: cover; height: 40%;" class="card-img-top" alt="">
+      <div class="card-body">
+          <h5 class="card-title" style="text-align: center;"><b>4 Formas de hacer pesto</b></h5>
+          <p class="card-text">
+            1-	Pesto tradicional: albahaca fresca, ajo, aceite de oliva.
+            <br>
+            2-	Pesto de palta: al pesto tradicional le agregamos una palta.
+            <br>
+            3-	Pesto de espinacas y nueces: a la receta tradicional, le agregamos la espinaca en igual cantidad que albahaca y agregamos nueces picadas.
+            <br></p>
+            
+          <script> {
+          <span class="hide" id="hideText"></span>
+          }
+          </script>
+        
+          <details>
+            <summary>Seguir leyendo...</summary><br>
+            <p>4-	Pesto de albahaca, remolacha y almendras: al pesto tradicional, le agregamos puré de remolacha asada, en igual cantidad que albahaca y almendras trituradas.<br>
+            5-	Pesto de tomates secos y albahaca: a la receta tradicional, le agregamos tomates secos triturados.</p>
+          </details>
+      </div>
+  </div>
+</span>
+
+
+<span>
+  <div class="card" style="border: none; text-align: justify;" data-aos="zoom-out-right">
+      <img src="img/porcion.png" style="object-fit: cover; height: 40%;" class="card-img-top" alt="">
+      <div class="card-body">
+          <h5 class="card-title" style="text-align: center;"><b>La Porción perfecta</b></h5>
+          <p class="card-text">
+            ¿Sabías que 300 gr es la porción justa? Por supuesto, que puede variar según el apetito de tus comensales.<br> <br>
+            Todas nuestras pastas se venden sueltas. Es decir, por unidad o por la cantidad de gramaje que el cliente necesite.</p>
+      </div>
+  </div>
+</span>
+
+
+<span>
+  <div class="card" style="border: none; text-align: justify;" data-aos="zoom-out-right">
+      <img src="img/fideosmariscos1.jpg" style="object-fit: cover; height: 40%;" class="card-img-top" alt="">
+      <div class="card-body">
+          <h5 class="card-title" style="text-align: center;"><b>Spaghettis con mariscos</b></h5>
+          <p class="card-text">
+            Para 2 porciones vas a necesitar los siguientes ingredientes: <br>
+            -	Una bandejita de nuestros fideos al huevo.<br>
+            -	500 grs de Mariscos.<br>
+            -	Perejil y albahaca a gusto.<br>
+            -	Dos dientes de ajo.<br></p>
+
+          <script> {
+            <span class="hide" id="hideText"></span>
+          }
+            </script>
+            
+            <details>
+              <summary>Seguir leyendo...</summary><br>
+              <p>-200 grs de tomates cherrys.<br>
+                -	Una taza de Vino blanco.<br>
+                -	Sal y Pimienta<br><br>
+                Poner a cocinar los mariscos (lavados) en agua con sal. Cuando rompa el hervor, esperar 5 minutos. Retirar los mariscos y reservar el agua.<br>
+                En una cacerola, colocar abundante aceite de oliva, los ajos, el perejil y la albahaca sin picar. Rehogar unos minutos y agregar los tomates cherrys cortados al medio.<br>Incorporar los mariscos cocidos. Condimentar a gusto. Agregar el vino blanco y cocinar a fuego moderado.<br> 
+                Mientras tanto, cocinar la pasta siguiente el tip de "el punto justo". Colocar los fideos en la cacerola junto con los mariscos y listo! Emplatar.</p>
+            </details>
+      </div>
+  </div>
+  </span>
+
+
+
+<span>
+<div class="card" style="border: none; text-align: justify;" data-aos="zoom-out-right">
+    <img src="img/6errores1.png" style="object-fit: cover; height: 40%;" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title" style="text-align: center;"><b>6 Errores comunes</b></h5>
+        <p class="card-text">
+          1.	Hervir las pastas en una olla muy pequeña. Hace que no se puedan remover con facilidad y se rompan o peguen entre sí.<br>
+          2.	Colocar poca agua en la olla. Se recomienda multiplicar el peso de la pasta por 10 aprox.<br></p>
+
+          <script> {
+            <span class="hide" id="hideText"></span>
+          }
+            </script>
+            
+            <details>
+              <summary>Seguir leyendo...</summary><br>
+              <p>3.	No colocarle sal al agua. Lo ideal es ponerle 1 cucharada de sal por cada litro de agua.<br>
+                4.	Cocer la pasta en exceso. Presta atención al tiempo de cocción! Una pasta pasada no quedará sabrosa.<br>
+                5.	Remojar la pasta una vez cocida.<br>
+                6.	Desechar el agua de cocción. Siempre guardar un poco de agua será tu aliada a la hora de mezclar la pasta y la salsa.<br></p>
+            </details>
+
+    </div>
+</div>
+</span>
+
+
+  <span>
+    <div class="card" style="border: none; text-align: justify;" data-aos="zoom-out-right">
+        <img src="img/ñoquishongos1.jpg" style="object-fit: cover; height: 40%;" class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title" style="text-align: center;"><b>Ñoquis con salsa de hongos</b></h5>
+            <p class="card-text">
+              Ingredientes: <br>
+              -	Ñoquis Angelo<br>
+              -	80 grs de hongos secos<br>
+              -	1 pocillo de Vino tinto<br>
+              -	2 hojas de Laurel y puñado de prejil<br>
+              -	Cantidad a gusto de Sal y Pimienta<br>
+              -	3 diente/s de Ajo<br></p>
+
+              <script>
+                <span class="hide" id="hideText"></span>     
+                </script>
+                
+                <details>
+                  <summary>Seguir leyendo...</summary><br>
+                  <p>- 3 cucharadass de Aceite de Oliva<br>
+                    -	1 taza de Crema de leche<br><br>
+                    Lavar los hongos en agua fría. Escurrirlos y cocinarlos 15 minutos con una taza de agua, el vino y el laurel. Colarlos (reservar el líquido) y picarlos.<br>
+                    Cocinar las pastas al dente en agua hirviendo con sal. Colarlos y reservar.<br>
+                    Pelar los ajos y picarlos. Saltearlos en una sartén con el aceite, hasta que estén transparentes e incorporar los hongos y el líquido de cocción.<br>Cocinar unos 5 minutos, hasta que la salsa se reduzca. Salpimentar.<br>
+                    Si quiere una salsa cremosa, agregar la crema de leche y cocinar 5 minutos más. Y servir!</p>
+                </details>
+            </p>
+
+        </div>
+    </div>
+    </span>
+</div>  
+
+<!--NOSOTROS-->
+
+<div class="productos">
+  <a name="Nosotros"></a>
+  <p>Nosotros</p>
+</div>
+<img src="img/hoja.png" class="hojatrigo">
+<p class="texto_nosotros">A continuación, mostraremos el paso a paso<br>
+  para la elaboración de Sorrentinos y Ravioles caseros.</p>
+
+
+<div class="grid-layout">
+
+  <div class="box uno">
+      <div id="video1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SNMbUM8Q4jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+
+  <div class="box dos">
+      <div id="video2">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TS_4RY0gjF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+</div>
+
+<div>
+<p class="texto_receta">¡Te proporcionamos un recetario para que puedas preparar tus pastas con estilo!</p>
+    <img src="img/flecha.png" class="flecha">
+    <a href="docs/Recetario.pdf" download="Recetario"><p class="texto_dl">Recetario</a></p>
+</div>
+
+
+<div class="formbox">
+  <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Tu Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+  </div>
+  <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Mandanos tu mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
+  </div>
+</div>
+
+<script>
+  const enviar=document.getElementById("enviar");
+  enviar.addEventListener('click', function(){
+  alert('Mensaje enviado.')
+})
+</script>
+
+
+<!--UBICACION-->
+
+
+<div class="productos">
+  <a name="Ubicación"></a>
+  <p>Nuestra Sucursal</p>
+</div>
+
+<div class="mapa">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.605842381748!2d-60.22541358532025!3d-33.3291186808088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767822c4781df%3A0x640bda47b055d775!2sANGELO%20(almac%C3%A9n%20de%20pastas)!5e0!3m2!1ses-419!2sar!4v1658868451094!5m2!1ses-419!2sar" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<span>
+  <br>
+  <p class="texto_mapa"><b>9 de Julio 196, San Nicolas de los Arroyos, Bs As<br>
+    - Horario de Atención -<br>
+    Martes a sábados: de 9:00 a 13hs y de 17hs a 20hs<br>
+    Domingos: de 9:00 a 13hs<br></b>
+  </p>
+</span>
+
+
+
+<!--FOOTER-->
+</div>
+    <div class="container">
+      <a name="Contacto"></a>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0">&copy; 2022 Paus inc.</span>
+          </div>
+          <div>
+            <img src="img/logosip.png" width="75px" style="align-items: left;" class="mb-3 me-2 mb-md-0"></a>
+
+          </div>
+          
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a href="http://www.intagram.com/angelopastas" target="_blank"><use xlink:href="#instagram"/><img src="img/ig.png" width="25px"></a></li>
+            <li class="ms-3"><a href="https://walink.co/f8e78e" target="_blank"><use xlink:href="#whatsapp"/><img src="img/wp.png" width="25px"></a></li>
+          </ul>
+        </footer>
+    </div>
+
+    <a href="#inicio"><img src="img/subir.png" id="botonArriba"></a>
+
+<script>
+  function irArriba(){
+    window.addEventListener("scroll", () => {
+      var scroll = document.documentElement.scrollTop;
+      console.log(scroll)
+      var botonArriba = document.getElementById("botonArriba")
+
+      if (scroll > 300){
+        botonArriba.style.right = 20 + "px";
+      } else {
+        botonArriba.style.right = -100 + "px";
+      }
+    } )
+  }
+
+irArriba();
+</script>
+</body>
+
+
+</html>
+
+
+
+ 

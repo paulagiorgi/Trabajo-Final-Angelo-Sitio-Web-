@@ -1,0 +1,362 @@
+.formulario{
+    border: solid 2px;
+    background-color: rgba(228, 214, 179, 0.5);
+    margin: auto;
+    width: 28%;
+    position: relative;
+    left: 35%;
+    padding: 1%;
+}
+.container{
+    color: rgba(216,89,25,255);
+ 
+}
+
+.barra{
+    position: relative;
+    left: 5%;
+}
+
+.barra1{
+    position: relative;
+    left: 13%;
+}
+
+.inicio{
+    color: white;
+    text-align: center;
+    padding: 4%;
+    font-size: 50px;
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    background-image: url(img/sorren.JPG);
+    background-size: 100%;
+}
+.inicio span {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
+}
+.productos{
+    text-align: center;
+    font-weight:800;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding: 30px;
+    color: black;
+}
+
+.texto1{
+    padding: 2px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 300%;
+    text-align: justify;
+    color: black;
+
+}
+
+.imginicio{
+    width: 5%;
+    color: whitesmoke;
+  
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-style: hidden;
+    margin: 2%;
+    gap: 10px;
+    row-gap: 1px;
+  
+}
+
+.box{
+    width: 90%;
+    height: 90%;
+    padding: 3%;
+
+}
+
+.boxtres{
+    width: 90%;
+    height: 90%;
+    padding: 3%;
+    position: relative;
+    display: inline-block;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: black;
+    background-color: white;
+   
+}
+
+
+.ubicacion{
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    margin: 2%;
+    border-style: hidden;
+    background-color:rgb(29, 28, 28);
+    padding: 1%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    }
+    
+.mapa{
+   text-align: center;
+}
+
+.texto_mapa{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+    text-align: center;
+    
+
+}
+
+.section-grid-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    margin-bottom: 50px;
+}
+
+.section-grid-1 span{
+    margin: auto;
+    width: 320px;
+    height: 500px;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    box-shadow:  5px 5px 16px #9d9d9d,
+             -5px -5px 16px #ffffff;
+
+}
+.card-body{
+    background-color: #f3f3f3;
+    position: relative;
+    z-index: 1;
+}
+
+
+.section-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    height: 1300px;
+    
+}
+.section-grid-2 span div:hover{
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: all 0.3s;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 2.3em;
+    font-weight:800;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ventana{
+    background-color: gray;
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    right: 60%;
+    display: none;
+}
+
+.ventana1{
+    background-color: gray;
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 60%;
+    display: none;
+}
+
+.ventana2{
+    background-color: gray;
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    right: 60%;
+    display: none;
+}
+
+.ventana3{
+    background-color: gray;
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 60%;
+    display: none;
+}
+
+.ventana4{
+    background-color: gray;
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    right: 60%;
+    display: none;
+}
+
+.ventana5{
+    background-color: gray;
+    width: 30%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 60%;
+    display: none;
+}
+
+.int-vent{
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 30px;
+    text-transform: none;    
+}
+
+.cerr{
+    filter: invert(55%) sepia(62%) saturate(5105%) hue-rotate(352deg) brightness(89%) contrast(91%);
+    position: absolute;
+    width: 8%;
+    right: 7px;
+    top: 5px;
+    
+}
+
+.hp{
+    text-decoration: none;
+    color: white;
+}
+
+#botonArriba{
+    filter: invert(55%) sepia(62%) saturate(5105%) hue-rotate(352deg) brightness(89%) contrast(91%);
+    position: fixed;
+    bottom: 20px;
+    right: -100px;
+    width: 40px;
+    transition: all 1s;
+}
+
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 1px solid black;
+    gap: 10px;
+    row-gap: 1px;
+}
+
+.box{
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px; 
+}
+
+.uno{
+    padding-top: 30px;
+}
+
+
+.dos{
+    padding-top: 30px;
+}
+
+.texto_nosotros{
+    color: black;
+    text-align: center;
+    padding: 2%;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.hojatrigo{
+    width: 5%;
+    display: block;
+    margin: 0px auto;
+}
+
+.texto_receta{
+    color: black;
+    text-align: center;
+    padding: 2%;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.texto_dl{
+    color: black;
+    text-align: center;
+    padding: 2%;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.flecha{
+    filter: invert(55%) sepia(62%) saturate(5105%) hue-rotate(352deg) brightness(89%) contrast(91%);
+    width: 3%;
+    display: block;
+    margin: 0px auto;
+}
+
+.formbox{
+    width: 98%;
+    padding: 20px;
+    margin: 30px 15px 15px 15px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
